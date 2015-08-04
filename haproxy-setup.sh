@@ -1,4 +1,5 @@
 #!/bin/bash
+apt-get update
 
 if [ ! -f /etc/haproxy/haproxy.cfg ]; then
 
@@ -36,8 +37,8 @@ backend webservers
     option httpchk
     option forwardfor
     option http-server-close
-    server web1 172.28.33.11:80 maxconn 32 check
-    server web2 172.28.33.12:80 maxconn 32 check
+    server web1 192.168.200.11:80 maxconn 32 check
+    server web2 192.168.200.12:80 maxconn 32 check
 
 listen admin
     bind *:8080
