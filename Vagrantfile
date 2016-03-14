@@ -21,7 +21,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
   config.vm.define :web1 do |web1_config|
 
-    web1_config.vm.hostname = 'web1'
+    web1_config.vm.hostname = 'web-01'
     web1_config.vm.network :private_network, ip: "192.168.200.11"
     web1_config.vm.provision :shell, :path => "web-setup.sh"
 
@@ -29,7 +29,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
   config.vm.define :web2 do |web2_config|
 
-    web2_config.vm.hostname = 'web2'
+    web2_config.vm.hostname = 'web-02'
     web2_config.vm.network :private_network, ip: "192.168.200.12"
     web2_config.vm.provision :shell, :path => "web-setup.sh"
 
