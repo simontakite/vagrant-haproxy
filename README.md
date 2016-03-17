@@ -32,4 +32,5 @@ Testing out HA proxy
 8.  When you're all done, type ``` exit ``` at the shell to get back to your local terminal.
 9.  To shut down the VM's, run ``` vagrant halt web1 web2 haproxy ```
 10.  To remove the VM's from your hard drive, run ``` vagrant destroy web1 web2 haproxy ```
-11.  If you wish to remove the cached image file from which these machines were created, run ``` vagrant box remove precise32 ```
+11.  If you wish to remove the cached image file from which these machines were created, run ``` vagrant box remove precise32 ``
+12. Testing`
